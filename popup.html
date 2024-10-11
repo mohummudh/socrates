@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soctrates</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    #questionOutput {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    #loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #444;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 10px auto;
+      display: none;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Soctrates</h2>
+  <button id="generateButton">Generate Question</button>
+  <div id="loader"></div>
+  <div id="questionOutput"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
