@@ -37,7 +37,7 @@ function getSelectedText() {
 
 // Function to generate a question based on the given text using Gemini Nano Prompt API
 async function generateQuestion(text) {
-    const prompt = `You are an educational assistant. Based on the following text, ask a question that Socrates might have asked about this:\n\n"${text}"`;
+  const prompt = `You are an educational assistant. Based on the following text, generate one short and simple yet profound question that tests the user's understanding and encourages deeper thought. An independent question, shedding the assumptions of the age. The question should provoke reflection on the implications, assumptions, or deeper meaning behind the content:\n\n"${text}"`;
 
   try {
     const { available } = await ai.assistant.capabilities();
